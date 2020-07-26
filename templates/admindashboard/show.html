@@ -1,0 +1,17 @@
+<html>
+<head>
+</head>
+<body>
+<h1>Select the event</h1>
+    <center>
+        <select>
+            <option select disabled="true">
+                Events
+            </option>
+            {% for res in events %}
+            <option>{{res.name}}</option>
+            {% endfor %}
+        </select>
+    </center>
+</body>
+</html>

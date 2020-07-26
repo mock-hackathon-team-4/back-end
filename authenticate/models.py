@@ -12,12 +12,12 @@ class UserProfileInfo(models.Model):
         return self.user.username
 
 
-class EventCreation(models.Model):
-    name = models.CharField(max_length=100)
-    description = models.TextField()
-
-    def __str__(self):
-        return self.name
+# class EventCreation(models.Model):
+#     name = models.CharField(max_length=100)
+#     description = models.TextField()
+#
+#     def __str__(self):
+#         return self.name
 
 
 class Volunteer(models.Model):

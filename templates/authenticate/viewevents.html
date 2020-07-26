@@ -1,0 +1,20 @@
+<html>
+<head>
+</head>
+<body>
+<h1>Select the event</h1>
+<form action=" {% url 'insert'  %}">
+    <center>
+        <select name="eventname">
+            <option select disabled="true">
+                Events
+            </option>
+            {% for res in events %}
+            <option value = "{{res.name}}">{{res.name}}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="register">
+    </center>
+</form>
+</body>
+</html>
